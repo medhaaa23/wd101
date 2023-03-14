@@ -1,0 +1,9 @@
+input#text:invalid {
+  border: 1px solid rgb(255, 0, 0);
+}
+input#email:invalid {
+  border: 1px solid rgb(255, 0, 0);
+}
+input#password:invalid {
+  border: 1px solid rgb(255, 0, 0);
+}

@@ -1,4 +1,35 @@
 
+// const form = document.getElementById("user-form");
+// const ageInput = document.getElementById("age");
+
+// form.addEventListener("submit", function(event) {
+//   event.preventDefault();
+
+//   const age = parseInt(ageInput.value);
+//   const dob = new Date(document.getElementById("dob").value);
+//   const today = new Date();
+
+//   const diff = today.getTime() - dob.getTime();
+//   const ageInYears = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+
+//   if (age !== ageInYears) {
+//     alert("Please enter a valid age and date of birth combination.");
+//     ageInput.value = "";
+//     ageInput.focus();
+//     return false;
+//   }
+
+//   if (age < 18 || age > 55) {
+//     alert("You must be between 18 and 55 years old to register.");
+//     ageInput.value = "";
+//     ageInput.focus();
+//     return false;
+//   }
+
+//     form.submit();
+// });
+
+
 function validateDOB() {
     // Get the user's date of birth
     var dob = new Date(document.getElementById("dob").value);
@@ -83,3 +114,7 @@ const saveUserForm =  (event)=>{
 }
 userForm.addEventListener('submit',saveUserForm);
 displayEntries();
+
+
+ 
+
