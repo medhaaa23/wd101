@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=<form> #form controls </form>> -->
+    <title>document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form id="user-form">
+        <h2>Registration Form</h2>
+        <div>
+        <label for="name">Name:</label>
+        <input required type="text" id="text" name="name: " placeholder="Enter Fullname">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input required type="email" id="email" name="email: " placeholder="Enter your email id">
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input required type="pass" id="password" name="password" placeholder="enter password">
+        <br>
+        <br>
+        <!-- <label for="age">Age:</label>
+        <input required type="number" id="age" name="age" min="18" max="55" placeholder="enter age(18-55)"> -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <input type="submit" value="check" onclick="validateDOB()">
+        <br><br>
+        <!-- <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"> -->
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox">Accept Terms & Conditions   </label>
+        <br><br>
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+    <div>
+        <h2>Entries</h2>
+        <div id="user-entries"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
